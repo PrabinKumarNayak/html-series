@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div>
+            <label for="username">Enter user name</label>
+            <input type="text" id="username">
+        </div>
+        <div>    
+            <label for="password">Enter password</label>
+            <input type="password" id="password">
+        </div> 
+        <div>    
+            <label for="email">Enter email</label>
+            <input type="email" id="email">
+        </div> 
+        <div>    
+            <label for="number">Enter your mobile number</label>
+            <input type="number" id="number" max="5" min="1" value="1">
+        </div> 
+        <div>    
+            <label for="gender">Gender</label>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" id="gender" name="gender" value="female">female
+        </div> 
+        <div>    
+            <label for="qualification">Select your qualification</label>
+            <input type="checkbox" id="qualification" name="qualification" value="10th">10th
+            <input type="checkbox" id="qualification" name="qualification" value="12th">12th
+        </div> 
+        <div>
+            <label for="country">Select your country name</label>
+            <select name="country" id="country">
+                <option>usa</option>
+                <option>india</option>
+                <option>africa</option>
+            </select>
+        </div>
+        <div>
+            <label for="country">Select your country name</label>
+            <input type="text" id="country" list="countries">
+            <datalist id="countries">
+                <option>usa</option>
+                <option>india</option>
+                <option>africa</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="message">Enter your views</label>
+            <textarea name="message" id="message" rows="5" cols="5"></textarea>
+        </div>
+
+        <button>login</button>
+        <button>clear</button>
+    </form>
+</body>
+</html>
