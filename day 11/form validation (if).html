@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFun(){
+            // alert("Function is working");
+            let txtuser=document.getElementById('username');
+            let pMsg=document.getElementById('msg');
+            if(txtuser.value===''){
+                pMsg.innerHTML='Please provide a text';
+            }else{
+                pMsg.innerHTML=txtuser.value;
+            }
+        }
+    </script>
+    <form >
+        <input type="text" id="username">
+        <span id="msg"></span><br>
+        <input type="button" value="Click me" onclick="myFun()">
+    </form>
+</body>
+</html>
